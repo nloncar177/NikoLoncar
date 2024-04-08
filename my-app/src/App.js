@@ -1,50 +1,41 @@
 
 import './App.css';
-import { NavButton } from './Botuni';
 import { End } from './Botuni';
 
 
-
-     //<NavButton naziv="Životopis/CV"/>
-     //<NavButton naziv="Illustrator"/>
-     //<NavButton naziv="Photoshop"/>
-
 function Nav() {
   return (
-    <div>
 
     <div className="nav">
 
      <h1 className="navSlov"> Niko Lončar  </h1>
      
     </div>
-
-
-<div className='textt prim'>
-
-</div>
-
-
-
-<div>
-<End/>
-</div>
-
-
-</div>
   );
 }
 
 
 
 
+export function CVimage(){
+
+  return <img src={require('./nl.jpg')} 
+  alt='Životopis' height="" width="80%"
+  className='razmak' />
+
+}
+
 
 function App(){
-
-
 return(
-<div data-theme>
+<div className='data-theme'>
+
 <Nav/>
+
+<CVimage/>
+
+<End/>
+
 </div>
 )
 }
