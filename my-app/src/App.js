@@ -2,6 +2,17 @@
 import './App.css';
 import { End } from './Botuni';
 
+import React, { useEffect } from 'react';
+
+
+
+function Example() {
+  useEffect(() => {
+    document.title = 'Niko Lončar';
+  }, []);
+}
+
+
 
 function Nav() {
   return (
@@ -20,7 +31,7 @@ function Nav() {
 export function CVimage(){
 
   return <img src={require('./nl.jpg')} 
-  alt='Životopis' height="" width="80%"
+  alt='Životopis' height="" width="55%"
   className='razmak' />
 
 }
@@ -33,7 +44,7 @@ return(
 <Nav/>
 
 <CVimage/>
-
+<br/>
 <End/>
 
 </div>
