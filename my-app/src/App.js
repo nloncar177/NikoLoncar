@@ -1,44 +1,41 @@
 
 import './App.css';
 import { NavButton } from './Botuni';
-import { NewsButton } from './Botuni';
-import { DarkMode } from './Botuni';
-import { NoviNews } from './Botuni';
+import { End } from './Botuni';
 
 
 
+     //<NavButton naziv="Životopis/CV"/>
+     //<NavButton naziv="Illustrator"/>
+     //<NavButton naziv="Photoshop"/>
 
 function Nav() {
   return (
+    <div>
+
     <div className="nav">
 
-     <h1>VIJESTI  </h1>
-     <NavButton naziv="Vijesti"/>
-     <NavButton naziv="Politika"/>
-     <NavButton naziv="Sport"/>
-
-     <DarkMode/>
-
+     <h1 className="navSlov"> Niko Lončar  </h1>
+     
     </div>
-    
+
+
+<div className='textt prim'>
+
+</div>
+
+
+
+<div>
+<End/>
+</div>
+
+
+</div>
   );
 }
 
 
-
-
-function NewsButtons(){
-
-  return (
-    <div className="botuniVijestiON"> 
-     <NewsButton naziv="N1 Vijesti" />
-     <NewsButton naziv="Slobodna Dalmacija" />
-     <NewsButton naziv="24 Sata" />
-     <NoviNews/>
-    </div>
-  );
-
-}
 
 
 
@@ -48,7 +45,6 @@ function App(){
 return(
 <div data-theme>
 <Nav/>
-<NewsButtons/> 
 </div>
 )
 }

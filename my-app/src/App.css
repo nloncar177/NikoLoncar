@@ -3,14 +3,15 @@
 background-color: var(--background);
 text-align: center;
 color: var(--text-primary);
+
 }
 
 
 :root {
-  --background: white;
-  --text-primary: black;
+  --background: rgb(14, 14, 14);
+  --text-primary: rgb(240, 240, 240);
   --text-secondary: royalblue;
-  --accent: purple;
+  --accent: rgb(26, 0, 0);
 }
 [data-theme='dark'] {
   --background: black;
@@ -23,82 +24,52 @@ color: var(--text-primary);
 
 
 .nav{
-background-color: var(--text-secondary);
-height: 30px;
+background-color: var(--accent);
+height: 35px;
 padding-bottom: 5px;
+
+position: fixed;
+top: 0px;
+
+width: 100%;
 }
 
 .navBotun{
-
   width: 15%;
   height: 25px;
+}
 
+.navSlov{
+  width: 45%;
+}
+
+.navBotun, .navSlov{
+  background-color: var(--accent);
 }
 
 
 
-.vstBotun{
-margin: 5px;
+.textt{
+font-size: 20px;
 
+padding-right: 150px;
+padding-left: 150px;
+
+text-align: left;
+}
+
+.prim{
+padding-top: 100px;
 }
 
 
 
-
-/* Samo jebeni darkmode botun OSIM NAV*/
 .nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2px;
 }
-.toggle-theme-wrapper span {
-  font-size: 14px;
-}
-.toggle-theme {
-  position: relative;
-  display: inline-block;
-  height: 17px;
-  width: 30px;
-}
-.toggle-theme input {
-  display: none;
-}
-.slider {
-  background-color: #ccc;
-  position: absolute;
-  cursor: pointer;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition: 0.2s;
-}
-.slider:before {
-  background-color: #fff;
-  bottom: 2px;
-  content: "";
-  height: 13px;
-  left: 2px;
-  position: absolute;
-  transition: 0.4s;
-  width: 13px;
-}
-input:checked + .slider:before {
-  transform: translateX(13px);
-}
-input:checked + .slider {
-  background-color: cornflowerblue;
-}
-.slider.round {
-  border-radius: 17px;
-}
-.slider.round:before {
-  border-radius: 50%;
-}
-/* Samo jebeni darkmode botun*/
-
-
 
 
 
